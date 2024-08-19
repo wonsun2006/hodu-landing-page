@@ -6,13 +6,25 @@
     <title>호두 랜딩 페이지</title>
     <link rel="stylesheet" href="./css/reset.css" />
     <link rel="stylesheet" href="./css/base.css" />
+    <link
+      rel="stylesheet"
+      href="./css/web.css"
+      media="screen and (min-width: 769px)"
+    />
+    <link
+      rel="stylesheet"
+      href="./css/mobile.css"
+      media="screen and (max-width: 768px)"
+    />
   </head>
   <body>
     <header>
       <div>
-        <a href="#"><img src="./assets/images/logo.png" alt="Hodu 로고" /></a>
+        <a href="#"
+          ><img src="./assets/images/logo.png" alt="Hodu 로고" id="logo"
+        /></a>
       </div>
-      <button>
+      <button id="drawer-open-btn">
         <svg
           width="32"
           height="32"
@@ -44,7 +56,7 @@
         </svg>
       </button>
       <nav>
-        <button>
+        <button id="drawer-close-btn">
           <svg
             width="32"
             height="32"
@@ -77,9 +89,7 @@
         <div>
           <a href="#">Support</a>
         </div>
-        <div>
-          <button>Download</button>
-        </div>
+        <button id="nav-download-btn">Download</button>
       </nav>
     </header>
     <main>

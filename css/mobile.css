@@ -1,0 +1,43 @@
+html {
+  font-size: 16px;
+}
+
+h2,
+h3 {
+  font-size: 1.5rem;
+}
+
+nav {
+  display: none;
+}
+
+#drawer-open-btn,
+#drawer-close-btn {
+  background-color: transparent;
+  padding: 0;
+}
+
+header,
+footer {
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+section {
+  padding-left: 32px;
+  padding-right: 32px;
+}
+
+header {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 24px;
+  padding-bottom: 24px;
+}
+
+#logo {
+  width: 92px;
+  height: 28px;
+}
