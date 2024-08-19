@@ -1,14 +1,25 @@
 html {
   font-size: 16px;
+  line-height: 1.25rem;
 }
 
 h2,
 h3 {
   font-size: 1.5rem;
+  line-height: 1.875rem;
 }
 
 nav {
   display: none;
+}
+
+p {
+  line-height: 1.25em;
+}
+
+button {
+  padding: 11px 24px;
+  font-size: 0.875rem;
 }
 
 #drawer-open-btn,
@@ -40,4 +51,33 @@ header {
 #logo {
   width: 92px;
   height: 28px;
+}
+
+#cover-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
+  padding-left: 60px;
+  padding-right: 60px;
+}
+
+#cover-desc-container {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+  font-size: 14px;
+}
+
+#cover-img-container {
+  width: 197px;
+  height: 360px;
+}
+
+#cover-img-container > img {
+  object-fit: cover;
+  width: inherit;
 }

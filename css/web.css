@@ -1,13 +1,19 @@
 html {
   font-size: 16px;
+  line-height: 1.25rem;
 }
 
 h2 {
   font-size: 3rem;
+  line-height: 3.75rem;
 }
 
 h3 {
   font-size: 2.25rem;
+}
+
+p {
+  line-height: 1.25rem;
 }
 
 nav {
@@ -46,4 +52,33 @@ header {
 #logo {
   width: 130px;
   height: 40px;
+}
+
+#cover-section {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 170px;
+}
+
+#cover-desc-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  row-gap: 40px;
+}
+
+#cover-desc-container > div:nth-child(2) {
+  width: 420px;
+}
+
+#cover-img-container {
+  width: 415px;
+  height: 766px;
+}
+
+#cover-img-container > img {
+  object-fit: cover;
+  width: inherit;
 }
