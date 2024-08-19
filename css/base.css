@@ -11,6 +11,10 @@ html {
   font-weight: 400;
 }
 
+body {
+  overflow-x: hidden;
+}
+
 h2 {
   font-weight: 700;
 }
