@@ -158,3 +158,31 @@ article > div {
   font-size: 18px;
   font-weight: 700;
 }
+
+#map-section {
+  padding-top: 40px;
+}
+
+#map-section > h2 {
+  margin-bottom: 16px;
+}
+
+#map-section > p {
+  color: #606367;
+  font-weight: 500;
+  margin-bottom: 28px;
+}
+
+#map-container {
+  width: 326px;
+  height: 132px;
+  margin-bottom: 320px;
+}
+
+#map-img {
+  object-fit: cover;
+  width: 347.17px;
+  height: 100%;
+  object-position: -13px -8px;
+  border-radius: 12px;
+}

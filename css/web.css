@@ -159,3 +159,32 @@ article > div {
   font-size: 1.5rem;
   font-weight: 700;
 }
+
+#map-section {
+  padding-top: 68px;
+}
+
+#map-section > h2 {
+  margin-bottom: 20px;
+  font-size: 36px;
+}
+
+#map-section > p {
+  color: #606367;
+  font-weight: 500;
+  margin-bottom: 48px;
+}
+
+#map-container {
+  width: 1280px;
+  height: 520px;
+  margin-bottom: 181px;
+}
+
+#map-img {
+  object-fit: cover;
+  width: 1363.13px;
+  height: 100%;
+  object-position: -54px -34px;
+  border-radius: 12px;
+}
