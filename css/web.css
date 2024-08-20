@@ -58,7 +58,7 @@ header {
   margin-left: 19px;
 }
 
-#logo {
+#header-logo {
   width: 130px;
   height: 40px;
 }
@@ -321,4 +321,43 @@ article > div {
   font-size: 14px;
   margin-top: 12px;
   margin-bottom: 38px;
+}
+
+footer {
+  display: flex;
+  padding-top: 45px;
+  padding-bottom: 45px;
+}
+
+footer > div {
+  display: flex;
+  flex: 1;
+  justify-content: space-between;
+}
+
+.icon-group {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 20px;
+}
+
+.icon-btn {
+  background-color: #f29d52;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-sizing: border-box;
+  width: 42px;
+  height: 42px;
+  border-radius: 42px;
+}
+
+#footer-logo {
+  width: 226px;
+  height: 70px;
+}
+
+#footer-link-group {
+  display: none;
 }

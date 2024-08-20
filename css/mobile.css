@@ -52,7 +52,7 @@ header {
   padding-bottom: 24px;
 }
 
-#logo {
+#header-logo {
   width: 92px;
   height: 28px;
 }
@@ -326,4 +326,54 @@ article > div {
   font-size: 14px;
   margin-top: 10px;
   margin-bottom: 28px;
+}
+
+footer {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 30px;
+  padding-bottom: 24px;
+}
+
+footer > div:first-child {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.icon-group {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 16px;
+}
+
+.icon-btn {
+  background-color: #f29d52;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-sizing: border-box;
+  width: 32px;
+  height: 32px;
+  border-radius: 32px;
+}
+
+.icon-btn > svg {
+  width: 18px;
+  height: 18px;
+}
+
+#footer-logo {
+  width: 112px;
+  height: 34px;
+}
+
+#footer-link-group {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  justify-content: space-between;
+  align-items: end;
+  color: #767676;
 }
