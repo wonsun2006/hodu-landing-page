@@ -261,3 +261,19 @@ article > div {
 #email-web-submit {
   display: none;
 }
+
+#hover-btn {
+  display: none;
+  /* display: flex;
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  bottom: 10px;
+  right: 10px;
+  background-color: #f5f5f5;
+  border-radius: 50px;
+  border: 1px #767676 solid;
+  width: 50px;
+  height: 50px;
+  z-index: 2; */
+}
