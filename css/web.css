@@ -161,6 +161,7 @@ article > div {
 }
 
 #map-section {
+  position: relative;
   padding-top: 68px;
 }
 
@@ -202,4 +203,52 @@ article > div {
   width: inherit;
   height: 100%;
   mix-blend-mode: screen;
+}
+
+#subscribe-window {
+  position: absolute;
+  bottom: -300px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #263140;
+  color: #ffffff;
+  border-radius: 30px;
+  box-sizing: border-box;
+  width: 1280px;
+  padding: 50px 58px;
+  z-index: 1;
+}
+
+#subscribe-window > div:first-child {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+  width: 470px;
+}
+
+#subscribe-window > div:first-child > p {
+  font-size: 14px;
+}
+
+#email-input {
+  display: flex;
+  align-items: center;
+  background-color: #ffffff;
+  width: 530px;
+  height: 60px;
+  border-radius: 60px;
+  padding-left: 28px;
+  padding-right: 6px;
+}
+
+#email-input > input {
+  border: none;
+  flex: 1;
+  margin-left: 16px;
+  margin-right: 16px;
+}
+
+#email-mobile-submit {
+  display: none;
 }
