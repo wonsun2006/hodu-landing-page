@@ -186,3 +186,18 @@ article > div {
   object-position: -13px -8px;
   border-radius: 12px;
 }
+
+#footer-img-container {
+  width: 100%;
+  height: 240px;
+  mix-blend-mode: screen;
+  background-color: #f2e9d899;
+}
+
+#footer-img {
+  object-fit: cover;
+  object-position: 0 -30px;
+  width: inherit;
+  height: 100%;
+  mix-blend-mode: screen;
+}
