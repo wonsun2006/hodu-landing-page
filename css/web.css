@@ -264,8 +264,8 @@ article > div {
   display: none;
 }
 
-#hover-btn {
-  display: flex;
+#scroll-top-btn {
+  display: none;
   align-items: center;
   justify-content: center;
   position: fixed;
@@ -279,7 +279,7 @@ article > div {
   z-index: 2;
 }
 
-#hover-btn:hover > svg > path {
+#scroll-top-btn:hover > svg > path {
   fill: #767676;
 }
 
