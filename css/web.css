@@ -79,7 +79,7 @@ header {
   display: flex;
   flex-direction: row;
   align-items: center;
-  gap: 170px;
+  justify-content: space-between;
 }
 
 #cover-desc-container {
@@ -88,10 +88,11 @@ header {
   justify-content: center;
   align-items: flex-start;
   row-gap: 40px;
+  width: 54%;
 }
 
 #cover-desc-container > div:nth-child(2) {
-  width: 420px;
+  width: 60%;
 }
 
 #cover-img-container {
@@ -107,9 +108,12 @@ header {
 }
 
 article > div {
-  width: 378px;
-  height: 378px;
+  width: 100%;
   border-radius: 30px;
+}
+
+article .thumbnail {
+  aspect-ratio: 1;
 }
 
 .thumbnail {
@@ -122,23 +126,27 @@ article > div {
 }
 
 #main-thumbnail {
-  width: 660px;
-  height: 390px;
+  width: 100%;
   border-radius: 30px;
 }
 
 #main-thumbnail-container {
-  display: flex;
+  display: grid;
+  grid-template-columns: 33fr 31fr;
   flex-direction: row;
   align-items: center;
-  gap: 110px;
   padding-top: 80px;
   padding-bottom: 80px;
+}
+
+#main-thumbnail > .thumbnail {
+  aspect-ratio: 1.7;
 }
 
 #main-thumbnail-container > div:nth-child(2) {
   display: flex;
   flex-direction: column;
+  margin-left: 17.5%;
   gap: 30px;
 }
 
@@ -221,7 +229,7 @@ article > div {
 
 #footer-img {
   object-fit: cover;
-  object-position: 0 -580px;
+  object-position: 0 40%;
   width: inherit;
   height: 100%;
   mix-blend-mode: screen;

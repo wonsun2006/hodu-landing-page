@@ -123,24 +123,29 @@ header {
 }
 
 article > div {
-  width: 326px;
-  height: 326px;
+  width: 100%;
   border-radius: 18px;
+}
+
+article .thumbnail {
+  aspect-ratio: 1;
 }
 
 .thumbnail {
   object-fit: cover;
   width: inherit;
-  height: 100%;
   object-position: center;
   border-radius: 18px;
   box-shadow: 10px 10px 20px 0 #00000040;
 }
 
 #main-thumbnail {
-  width: 326px;
-  height: 190px;
+  width: 100%;
   border-radius: 30px;
+}
+
+#main-thumbnail > .thumbnail {
+  aspect-ratio: 1.7;
 }
 
 #main-thumbnail-container {
@@ -234,7 +239,7 @@ article > div {
 
 #footer-img {
   object-fit: cover;
-  object-position: 0 -30px;
+  object-position: 0 25%;
   width: inherit;
   height: 100%;
   mix-blend-mode: screen;
