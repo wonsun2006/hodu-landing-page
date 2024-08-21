@@ -71,8 +71,8 @@ body {
 }
 
 section {
-  padding-left: 32px;
-  padding-right: 32px;
+  margin-left: 32px;
+  margin-right: 32px;
 }
 
 header {
@@ -96,6 +96,8 @@ header {
   gap: 30px;
   padding-left: 60px;
   padding-right: 60px;
+  margin-left: 0;
+  margin-right: 0;
 }
 
 #cover-desc-container {
@@ -211,15 +213,14 @@ article > div {
 }
 
 #map-container {
-  width: 326px;
-  height: 132px;
+  width: 100%;
   margin-bottom: 320px;
 }
 
 #map-img {
   object-fit: cover;
-  width: 347.17px;
-  height: 100%;
+  width: inherit;
+  height: inherit;
   object-position: -13px -8px;
   border-radius: 12px;
 }
@@ -241,17 +242,17 @@ article > div {
 
 #subscribe-window {
   position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
   bottom: -388px;
   display: flex;
   flex-direction: column;
-  align-items: center;
   background-color: #263140;
   color: #ffffff;
   border-radius: 30px;
   box-sizing: border-box;
   width: 326px;
-  height: 348px;
-  padding: 36px 32px;
+  padding: 36px 32px 30px 32px;
   z-index: 1;
   gap: 30px;
 }
@@ -259,6 +260,9 @@ article > div {
 #subscribe-window > div {
   display: flex;
   flex-direction: column;
+  width: 100%;
+  align-items: start;
+  text-align: start;
   gap: 20px;
 }
 
@@ -275,23 +279,30 @@ article > div {
   display: flex;
   align-items: center;
   background-color: #ffffff;
-  width: 262px;
+  width: inherit;
   border-radius: 60px;
+  box-sizing: border-box;
   padding-top: 11px;
   padding-bottom: 11px;
   padding-left: 16px;
   padding-right: 6px;
 }
 
-#email-input > form > input {
-  border: none;
-  flex: 1;
+#email-input > form {
+  display: flex;
   margin-left: 14px;
   margin-right: 14px;
 }
 
-#email-mobile-submit {
-  align-self: end;
+#email-input > form > input {
+  border: none;
+}
+
+#email-mobile-submit-container {
+  display: flex;
+  width: 100%;
+  justify-content: end;
+  /* align-items: end; */
 }
 
 #email-web-submit {

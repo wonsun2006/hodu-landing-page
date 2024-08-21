@@ -26,10 +26,14 @@ nav {
 }
 
 header,
-section,
 footer {
   padding-left: 320px;
   padding-right: 320px;
+}
+
+section {
+  margin-left: 320px;
+  margin-right: 320px;
 }
 
 body {
@@ -68,6 +72,10 @@ header {
 }
 
 #cover-section {
+  margin-left: 0;
+  margin-right: 0;
+  padding-left: 320px;
+  padding-right: 320px;
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -173,6 +181,8 @@ article > div {
 }
 
 #map-section {
+  display: flex;
+  flex-direction: column;
   position: relative;
   padding-top: 68px;
 }
@@ -189,16 +199,16 @@ article > div {
 }
 
 #map-container {
-  width: 1280px;
-  height: 520px;
+  width: 100%;
   margin-bottom: 181px;
+  border-radius: 12px;
 }
 
 #map-img {
   object-fit: cover;
-  width: 1363.13px;
-  height: 100%;
-  object-position: -54px -34px;
+  width: inherit;
+  height: inherit;
+  object-position: center;
   border-radius: 12px;
 }
 
@@ -219,35 +229,41 @@ article > div {
 
 #subscribe-window {
   position: absolute;
-  bottom: -300px;
+  bottom: -10%;
   display: flex;
   align-items: center;
-  justify-content: space-between;
   background-color: #263140;
   color: #ffffff;
   border-radius: 30px;
   box-sizing: border-box;
-  width: 1280px;
-  padding: 50px 58px;
+  width: 100%;
+  flex: 1;
   z-index: 1;
+}
+
+#subscribe-window > div {
+  flex: 1;
+  padding: 50px 58px;
 }
 
 #subscribe-window > div:first-child {
   display: flex;
   flex-direction: column;
   gap: 18px;
-  width: 470px;
 }
 
 #subscribe-window > div:first-child > p {
   font-size: 14px;
 }
 
+#subscribe-window > div:last-child {
+  align-items: center;
+}
+
 #email-input {
   display: flex;
   align-items: center;
   background-color: #ffffff;
-  width: 530px;
   height: 60px;
   border-radius: 60px;
   padding-left: 28px;
