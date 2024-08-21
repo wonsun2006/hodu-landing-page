@@ -27,6 +27,30 @@ function openSubscribeModal() {
   overlay.style.display = 'block';
 }
 
+function openSidebar() {
+  let sidebar = document.querySelector('nav');
+  sidebar.animate(
+    [{ transform: 'translateX(0)' }, { transform: 'translateX(-100%)' }],
+    {
+      duration: 300,
+      fill: 'forwards',
+      easing: 'ease-in-out',
+    }
+  );
+}
+
+function closeSidebar() {
+  let sidebar = document.querySelector('nav');
+  sidebar.animate(
+    [{ transform: 'translateX(-100%)' }, { transform: 'translateX(0)' }],
+    {
+      duration: 300,
+      fill: 'forwards',
+      easing: 'ease-in-out',
+    }
+  );
+}
+
 function onSubscribeClick() {
   if (checkSubscribeValidity()) {
     openSubscribeModal();
