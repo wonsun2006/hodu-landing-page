@@ -257,7 +257,7 @@ article > div {
   padding-right: 6px;
 }
 
-#email-input > input {
+#email-input > form > input {
   border: none;
   flex: 1;
   margin-left: 14px;

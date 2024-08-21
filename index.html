@@ -16,8 +16,8 @@
       href="./css/mobile.css"
       media="screen and (max-width: 768px)"
     />
-    <script src="./js/event.js"></script>
-    <script src="./js/scroll-top.js"></script>
+    <script src="./js/events.js"></script>
+    <script src="./js/utils.js"></script>
   </head>
   <body>
     <header>
@@ -245,10 +245,21 @@
                   stroke-linejoin="round"
                 />
               </svg>
-              <input type="text" placeholder="Enter your e-mail address" />
-              <button id="email-web-submit">Subscribe</button>
+              <form action="" id="subscribe-form" method="POST">
+                <input
+                  type="text"
+                  placeholder="Enter your e-mail address"
+                  name="email"
+                  id="subscription-email"
+                />
+              </form>
+              <button id="email-web-submit" onclick="onSubscribeClick()">
+                Subscribe
+              </button>
             </div>
-            <button id="email-mobile-submit">Subscribe</button>
+            <button id="email-mobile-submit" onclick="onSubscribeClick()">
+              Subscribe
+            </button>
           </div>
         </div>
       </section>
@@ -275,7 +286,9 @@
       <img src="./assets/images/modal_cat.png" alt="고양이 얼굴 이미지" />
       <h3 class="text-orange">Thank you!</h3>
       <p>Lorem Ipsum is simply dummy text of the printing industry.</p>
-      <button>OK! I Love HODU</button>
+      <button type="submit" form="subscribe-form" id="subscribe-submit-btn">
+        OK! I Love HODU
+      </button>
     </div>
     <footer>
       <div>
