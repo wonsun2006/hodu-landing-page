@@ -166,11 +166,30 @@ article .thumbnail {
 
 #thumbnail-group {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: 1fr 1fr;
-  gap: 72px;
+  gap: 3.75vw;
   padding-top: 48px;
   padding-bottom: 48px;
+}
+
+/* 768px보다 작을 때 */
+@media (max-width: 768px) {
+  #thumbnail-group {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* 768px ~ 1280px 사이일때 */
+@media (min-width: 768px) and (max-width: 1280px) {
+  #thumbnail-group {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+/* 1280px보다 클때 */
+@media (min-width: 1280px) {
+  #thumbnail-group {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
 }
 
 #more-container {
