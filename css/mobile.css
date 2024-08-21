@@ -288,6 +288,10 @@ article > div {
   z-index: 2; */
 }
 
+#scroll-top-btn > svg {
+  display: none;
+}
+
 #overlay {
   position: fixed;
   top: 0;
