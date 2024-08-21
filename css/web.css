@@ -22,7 +22,7 @@ nav {
   display: flex;
   flex-direction: row;
   align-items: center;
-  gap: 30px;
+  gap: 49px;
 }
 
 header,
@@ -57,8 +57,9 @@ header {
   z-index: 10;
 }
 
-#nav-download-btn {
-  margin-left: 19px;
+#nav-link-group {
+  display: flex;
+  gap: 30px;
 }
 
 #header-logo {
