@@ -266,51 +266,76 @@ article .thumbnail {
   width: 100%;
   flex: 1;
   z-index: 1;
+  padding: 50px 58px;
 }
 
 #subscribe-window > div {
   flex: 1;
-  padding: 50px 58px;
 }
 
-#subscribe-window > div:first-child {
+#subscribe-desc-area {
   display: flex;
   flex-direction: column;
   gap: 18px;
 }
 
-#subscribe-window > div:first-child > p {
+#subscribe-desc-area > p {
   font-size: 14px;
 }
 
-#subscribe-window > div:last-child {
+#subscribe-form-area {
+  display: flex;
   align-items: center;
+  justify-content: right;
 }
 
-#email-input {
+#email-input-container {
   display: flex;
   align-items: center;
   background-color: #ffffff;
+  width: 91.3%;
   height: 60px;
   border-radius: 60px;
+  box-sizing: border-box;
   padding-left: 28px;
   padding-right: 6px;
 }
 
-#email-input > form > input {
-  border: none;
-  flex: 1;
-}
-
-#email-input > form {
-  display: flex;
-  flex: 1;
+#email-input-container > form {
+  flex: 1 1;
   margin-left: 16px;
   margin-right: 16px;
 }
 
+#subscribe-email-input {
+  flex: 1 1;
+  border: none;
+  width: 100%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
 #email-mobile-submit {
   display: none;
+}
+
+@media (max-width: 1280px) {
+  #subscribe-window {
+    flex-direction: column;
+    gap: 18px;
+    padding: 30px 20px;
+  }
+
+  #subscribe-form-area {
+    display: flex;
+    flex: 1;
+    align-items: center;
+    justify-content: center;
+  }
+
+  #email-input-container {
+    flex: 1;
+  }
 }
 
 #scroll-top-btn {

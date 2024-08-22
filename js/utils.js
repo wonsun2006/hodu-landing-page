@@ -16,7 +16,7 @@ function checkEmailValidity(email) {
 }
 
 function checkSubscribeValidity() {
-  let email = document.querySelector('#subscription-email').value;
+  let email = document.querySelector('#subscribe-email-input').value;
   return checkEmailValidity(email);
 }
 
