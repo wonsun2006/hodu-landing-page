@@ -293,14 +293,18 @@ article .thumbnail {
   padding-right: 6px;
 }
 
-#email-input-container > form {
+#subscribe-form {
   display: flex;
   margin-left: 14px;
   margin-right: 14px;
 }
 
-#email-input-container > form > input {
+#subscribe-form > input {
   border: none;
+}
+
+#subscribe-form > input:focus {
+  outline: none;
 }
 
 #email-mobile-submit-container {
