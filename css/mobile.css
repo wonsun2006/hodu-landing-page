@@ -280,7 +280,7 @@ article .thumbnail {
   height: 18px;
 }
 
-#email-input {
+#email-input-container {
   display: flex;
   align-items: center;
   background-color: #ffffff;
@@ -293,13 +293,13 @@ article .thumbnail {
   padding-right: 6px;
 }
 
-#email-input > form {
+#email-input-container > form {
   display: flex;
   margin-left: 14px;
   margin-right: 14px;
 }
 
-#email-input > form > input {
+#email-input-container > form > input {
   border: none;
 }
 
