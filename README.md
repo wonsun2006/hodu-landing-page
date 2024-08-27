@@ -1,5 +1,7 @@
 # 호두 랜딩 페이지
 
+https://wonsun2006.github.io/hodu-landing-page/
+
 ![커버 섹션 이미지](./docs/cover_section_web.png)
 ![썸네일 섹션 이미지](./docs/thumbnail_section_web.png)
 ![지도 섹션 이미지](./docs/map_section_web.png)
