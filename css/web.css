@@ -301,10 +301,14 @@ article .thumbnail {
   padding-right: 6px;
 }
 
-#subscribe-email-input {
+#subscribe-form {
   flex: 1 1;
   margin-left: 16px;
   margin-right: 16px;
+}
+
+#subscribe-email-input {
+  flex: 1 1;
   border: none;
   width: 100%;
   overflow: hidden;
