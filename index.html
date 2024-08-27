@@ -247,12 +247,14 @@
                   stroke-linejoin="round"
                 />
               </svg>
-              <input
-                type="text"
-                placeholder="Enter your e-mail address"
-                name="email"
-                id="subscribe-email-input"
-              />
+              <form id="subscribe-form" method="POST">
+                <input
+                  type="text"
+                  placeholder="Enter your e-mail address"
+                  name="email"
+                  id="subscribe-email-input"
+                />
+              </form>
               <button id="email-web-submit" onclick="onSubscribeClick()">
                 Subscribe
               </button>
@@ -288,12 +290,7 @@
       <img src="./assets/images/modal_cat.png" alt="고양이 얼굴 이미지" />
       <h3 class="text-orange">Thank you!</h3>
       <p>Lorem Ipsum is simply dummy text of the printing industry.</p>
-      <button
-        type="submit"
-        form="subscribe-form"
-        id="subscribe-submit-btn"
-        onclick="onEmailSubmit()"
-      >
+      <button type="submit" form="subscribe-form" id="subscribe-submit-btn">
         OK! I Love HODU
       </button>
     </div>
