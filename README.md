@@ -126,7 +126,15 @@ gantt
     사이드바 열고 닫기           :2024-08-21, 1d
 ```
 
-## 5. 화면 설계
+## 5. 와이어프레임 / UI
+
+### 5-1. 와이어프레임
+
+[Figma 링크](<https://www.figma.com/design/s9RCnA6dSi3QHHeMDFHKE6/EST-%EC%98%A4%EB%A5%B4%EB%AF%B8(BE)_HTML%2FCSS%2FJS?node-id=104924-12>)
+
+<img src="./docs/figma_design.png" alt="figma 디자인 이미지" width="60%">
+
+### 5-2. 화면 설계
 
 ### 커버 화면 - 웹
 
