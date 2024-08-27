@@ -14,3 +14,7 @@ window.addEventListener('scroll', function () {
     scrollTopBtn.style.position = 'fixed';
   }
 });
+
+window.addEventListener('submit', function (event) {
+  event.preventDefault();
+});

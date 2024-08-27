@@ -299,11 +299,11 @@ article .thumbnail {
   margin-right: 14px;
 }
 
-#subscribe-form > input {
+#subscribe-email-input {
   border: none;
 }
 
-#subscribe-form > input:focus {
+#subscribe-email-input:focus {
   outline: none;
 }
 
@@ -311,7 +311,6 @@ article .thumbnail {
   display: flex;
   width: 100%;
   justify-content: end;
-  /* align-items: end; */
 }
 
 #email-web-submit {

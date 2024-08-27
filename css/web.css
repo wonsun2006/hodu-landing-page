@@ -307,16 +307,16 @@ article .thumbnail {
   margin-right: 16px;
 }
 
-#subscribe-form > input:focus {
-  outline: none;
-}
-
 #subscribe-email-input {
   flex: 1 1;
   border: none;
   width: 100%;
   overflow: hidden;
   text-overflow: ellipsis;
+}
+
+#subscribe-email-input:focus {
+  outline: none;
 }
 
 #email-mobile-submit {
