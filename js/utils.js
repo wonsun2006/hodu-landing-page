@@ -27,6 +27,22 @@ function openSubscribeModal() {
   overlay.style.display = 'block';
 }
 
+function closeSubscribeModal() {
+  let modal = document.querySelector('#modal');
+  let overlay = document.querySelector('#overlay');
+  modal.style.display = 'none';
+  overlay.style.display = 'none';
+}
+
+function onEmailSubmit() {
+  // let email = document.querySelector('#subscribe-email-input').value;
+  // 현재 서버로 전송하지 않는 상태
+  // 실제 전송을 하기 위해서는, email을 서버 URL로 전송 필요
+  let input = document.querySelector('#subscribe-email-input');
+  input.value = null;
+  closeSubscribeModal();
+}
+
 function openSidebar() {
   let sidebar = document.querySelector('nav');
   sidebar.animate(
